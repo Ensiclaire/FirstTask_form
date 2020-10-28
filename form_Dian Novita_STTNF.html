@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrasi Santri</title>
+        <style>
+            body{
+                text-align: center;
+                background: mintcream;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <img src="logo1.jpg" alt="form-Dian Novita" style="width: 150px"/>
+        <h2 style="color: black">Formulir Pendataan Santri</h2>
+        <h2 style="color: black">[TPA Nurul Iman]</h2>
+        <hr/>
+
+        <form action="proses.php" method="post">
+            <fieldset style="background-color: seagreen;">
+                <p>
+                    <label>Nama Lengkap</label>
+                    <br />
+                    <input type="text" style="width: 380px;"/>
+                </p>
+
+                <p>
+                    <label>Tanggal Lahir</label>
+                    <br />
+                    <input type="date" />
+                </p>
+
+                <p>
+                    <label>Usia</label>
+                    <br />
+                    <input type="number" style="width: 50px;"/>
+                </p>
+                
+                
+                <p>
+                    <label>[Jenis Kelamin]</label>
+                    <input type="radio" name="gender"/>Ikhwan
+                    <input type="radio" name="gender"/>Akhwat
+                </p>
+                
+                <p>
+                    <label>Asal Sekolah</label> 
+                    <br /> 
+                    <input type="text" style="width: 380px;"/>
+                </p>
+
+                <p>
+                    <label>Kelas</label>
+                    <select name="Kelas">
+                        <option value="---">---</option>
+                        <option value="TK">TK</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                        <option value="VI">VI</option>
+                        <option value="VII">VII</option>
+                        <option value="VIII">VIII</option>
+                        <option value="X">X</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Alamat Rumah</label> 
+                    <br /> 
+                    <input type="text" style="width: 380px;"/>
+                </p>
+            
+                
+                <p>
+                    <label>Nama Orang Tua</label> 
+                    <br /> 
+                    <input type="text" style="width: 380px;"/>
+                </p>
+            
+                <p>
+                    <label>No. Telepon Orang Tua</label>
+                    <br />
+                    <input type="tel"/>
+                </p>
+
+                <p>
+                    <label>[Kelas TPA]</label>
+                    <input type="radio" name="iqra"/>Iqra
+                    <input type="radio" name="qur'an"/>Qur'an
+                </p>
+
+                <p>
+                    <label>Email</label> 
+                    <br /> 
+                    <input type="email" placeholder="masukan email santri disini" style="width: 380px;"/>
+                </p>
+
+                <nav>
+                    <button type="submit">Submit</button>
+                </nav>
+            </fieldset>
+        </form>
+        <hr/>
+        <p style="color: black"><i>&copy; Oktober 2020 Dian Novita</i></p>
+    </body>
+</html>
